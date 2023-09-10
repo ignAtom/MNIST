@@ -34,6 +34,8 @@ array([[ 974,    1,    1,    0,    0,    1,    2,    1,    0,    0],
       dtype=int64)
 
 ## Model 2 - SVM
+
+1. Linear
 Classification report:
               precision    recall  f1-score   support
 
@@ -64,6 +66,8 @@ array([[ 953,    0,    6,    2,    1,    8,    6,    2,    1,    1],
        [  11,    7,   10,   29,    8,   23,    8,    6,  860,   12],
        [   9,    7,    6,   11,   38,    5,    0,   23,   12,  898]],
       dtype=int64)
+
+2. 
 
 ## Model 3 - CNN
 Classification report:
