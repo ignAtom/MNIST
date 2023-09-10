@@ -67,7 +67,37 @@ array([[ 953,    0,    6,    2,    1,    8,    6,    2,    1,    1],
        [   9,    7,    6,   11,   38,    5,    0,   23,   12,  898]],
       dtype=int64)
 
-2. 
+2. Radial(rbf)
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98       980
+           1       0.99      0.99      0.99      1135
+           2       0.95      0.97      0.96      1032
+           3       0.97      0.97      0.97      1010
+           4       0.97      0.96      0.97       982
+           5       0.96      0.96      0.96       892
+           6       0.98      0.97      0.97       958
+           7       0.93      0.96      0.94      1028
+           8       0.96      0.95      0.96       974
+           9       0.97      0.94      0.95      1009
+
+    accuracy                           0.97     10000
+   macro avg       0.97      0.97      0.97     10000
+weighted avg       0.97      0.97      0.97     10000
+
+Confusion matrix:
+array([[ 967,    0,    2,    1,    0,    3,    3,    2,    2,    0],
+       [   0, 1125,    5,    0,    0,    1,    2,    0,    2,    0],
+       [   5,    1,  996,    2,    2,    0,    1,   15,    9,    1],
+       [   0,    0,    3,  980,    1,    7,    0,   12,    7,    0],
+       [   0,    0,   13,    0,  945,    2,    3,    7,    2,   10],
+       [   2,    0,    2,   11,    1,  857,    6,    5,    6,    2],
+       [   6,    2,    0,    0,    4,    8,  927,    6,    5,    0],
+       [   1,    6,   13,    3,    3,    0,    0,  989,    0,   13],
+       [   3,    0,    6,    5,    6,   10,    3,   12,  926,    3],
+       [   4,    5,    6,   11,   13,    2,    0,   21,    3,  944]],
+      dtype=int64)
 
 ## Model 3 - CNN
 Classification report:
@@ -137,3 +167,4 @@ array([[ 968,    0,    1,    0,    0,    2,    4,    1,    4,    0],
 Final Accuracy: tensor(92.4600)
 
 I'm not sure how to show the classification report and confusion matrix from this, but I'll try to figure it out
+Used pytorch for it from a tutorial, will change it to tensorflow. 
